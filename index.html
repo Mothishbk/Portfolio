@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
   <title>Mothish Babu Kandaswamy</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -14,6 +15,7 @@
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
+      <a href="#achievements">Achievements</a>
       <a href="#contact">Contact</a>
     </nav>
   </header>
@@ -32,41 +34,45 @@
     <h2>Experience</h2>
     <div class="item">
       <h3>Software Engineer – LTIMindtree (2021–2023)</h3>
-      <ul>
-        <li>Built Datadog dashboards; 70% faster incident detection</li>
-        <li>Authored automation tooling in Python/Flask—improving ops workflows</li>
-        <li>Maintained 99.9% uptime, led root‑cause and MTTR reduction efforts</li>
-        <li>Performed Splunk‑based log analytics for security anomaly detection</li>
-      </ul>
+      <p>As a Software Engineer at LTIMindtree, I specialized in observability, automation, and incident response across large-scale production systems. I developed proactive monitoring dashboards using Datadog, which significantly improved incident detection and system stability. I created a Flask-based automation tool with MySQL and API integrations, enhancing user experience and operational efficiency. I also played a key role in training L1 support teams, enabling independent alert resolution and reducing escalation rates. My work in log analysis and threat detection using Splunk supported effective security investigations. Additionally, I managed 24/7 system monitoring, maintained 99.9% uptime, and contributed to security incident triage, vulnerability management, and Azure-based infrastructure reliability.</p>
     </div>
   </section>
 
   <section id="projects" class="section">
     <h2>Projects</h2>
     <div class="item">
-      <h3>APT Analysis (MSc Thesis)</h3>
-      <p>Applied MITRE ATT&CK to financial sector threats, visualized multi‑stage attack flow.</p>
-      <h3>AI Social Distancing Detector</h3>
-      <p>Developed MobileNet‑SSD + sensors for occupancy monitoring.</p>
+      <h3>Analyzing APT Campaigns in the Finance Sector Using the MITRE ATT&CK Framework</h3>
+      <p>Analyzed Advanced Persistent Threats (APTs) in the financial sector using the MITRE ATT&CK framework, focusing on groups like Lazarus, FIN7, and Cobalt. Mapped tactics, highlighted common strategies, and created visual attack flow maps for threat mitigation.</p>
+      <h3>Deep-Learning based Social Distance, Mask and Thermal detectionr</h3>
+      <p>Developed a prototype using Camera module, MobileNet-SSD method and AMG 8833 IR Sensor for Active monitoring the people wearing mask and maintaining Social Distancing along with temperature</p>
       <h3>Smart Accident Avoidance System</h3>
-      <p>Designed sensor-based lane & collision detection prototype.</p>
+      <p>USING ARDUINO (IOT)-Components used in this are IR and Ultrasonic Sensor . Collision avoidance is featured for avoiding accident from front and rear then Blindspot is implemented to ensure the vehicle to cross road safely,then Lane Tracking is similar to an autopilot feature.</p>
     </div>
   </section>
 
   <section id="skills" class="section">
     <h2>Skills</h2>
+    <p><strong>Languages and Framework:</strong> Java (Spring Boot), Python (Flask), Shell, JavaScript, TypeScript, Angular, Java (Hibernate)</p>
     <p><strong>Cloud & Infra:</strong> Azure, AWS, Terraform</p>
     <p><strong>Observability:</strong> Datadog, Splunk, Grafana, Prometheus</p>
     <p><strong>Automation & Code:</strong> Python, Flask, Shell; IaC</p>
     <p><strong>Big Data & Logging:</strong> Kafka, HBase, Hadoop, SIEM</p>
     <p><strong>Security:</strong> MITRE ATT&CK, ISO 27001, Threat Intel</p>
   </section>
-
-  <section id="contact" class="section">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:mothishbk2000@gmail.com">mothishbk2000@gmail.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/mothish-babukandaswamy" target="_blank">/in/mothish-babukandaswamy</a></p>
+  <section id="achievements" class="section">
+    <h2>Achievements</h2>
+    <p><strong>MASTERMIND:</strong> Apreciating on the efforts in automation activities and active involvement in the priority incidents</p>
+     <p><strong>A-TEAM AWARD:</strong> Appreciating on the efforts in fine tuning the Promotion Validation Tool and keeping the tool success percentage consistently greater than 99%</p>
   </section>
+  <section id="contact" class="section">
+  <h2>Contact</h2>
+  <button id="toggleContact">Show Contact Info</button>
+  <div id="contactDetails" style="display:none; margin-top:1rem;">
+    <p><i class="fa fa-envelope"></i> <a href="mailto:mothishbk2000@gmail.com">mothishbk2000@gmail.com</a></p>
+    <p><i class="fa fa-linkedin"></i> <a href="https://linkedin.com/in/mothish-babukandaswamy" target="_blank">/in/mothish-babukandaswamy</a></p>
+  </div>
+</section>
+
 
   <footer>
     © 2025 Mothish Babu Kandaswamy
