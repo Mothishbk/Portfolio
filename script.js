@@ -1,9 +1,15 @@
-const toggles = document.querySelectorAll(".accordion-toggle");
+// Optional: highlight nav on scroll (future enhancement placeholder)
+const sections = document.querySelectorAll(".section");
+const navLinks = document.querySelectorAll("header nav a");
 
-toggles.forEach((toggle) => {
-  toggle.addEventListener("click", () => {
-    const content = toggle.nextElementSibling;
-    content.style.display =
-      content.style.display === "block" ? "none" : "block";
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach(sec => {
+    const top = sec.offsetTop - 60;
+    if (pageYOffset >= top) current = sec.getAttribute("id");
+  });
+
+  navLinks.forEach(a => {
+    a.classList.toggle("active", a.getAttribute("href") === "#" + current);
   });
 });
