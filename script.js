@@ -13,3 +13,17 @@ window.addEventListener("scroll", () => {
     a.classList.toggle("active", a.getAttribute("href") === "#" + current);
   });
 });
+
+
+const toggleBtn = document.getElementById("toggleContact");
+const contactBox = document.getElementById("contactDetails");
+
+toggleBtn.addEventListener("click", () => {
+  if (contactBox.style.display === "none") {
+    contactBox.style.display = "block";
+    toggleBtn.textContent = "Hide Contact Info";
+  } else {
+    contactBox.style.display = "none";
+    toggleBtn.textContent = "Show Contact Info";
+  }
+});
