@@ -1,0 +1,54 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+header, footer {
+  background-color: #2f3e46;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+a {
+  color: #00b4d8;
+  text-decoration: none;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.accordion-toggle {
+  background: #023047;
+  color: #fff;
+  padding: 1rem;
+  margin: 0.5rem 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.accordion-toggle:hover {
+  background: #03588c;
+}
+
+.accordion-content {
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+  display: none;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+ul {
+  padding-left: 1.2rem;
+}
